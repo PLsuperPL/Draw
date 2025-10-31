@@ -1,3 +1,6 @@
+#include <windows.h>
+#include <iostream>
+
 #define MAXCHARX 86
 #define MAXCHARY 40
 

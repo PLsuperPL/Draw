@@ -4,7 +4,7 @@
 
 namespace draw
 {
-    unsigned long rysujRamke(int x, int y, int szer, int wys, bool czyRamka, unsigned char znak)
+    unsigned long rysujRamke(int x, int y, int szer, int wys, unsigned char znak)
     {
         // Sprawdzenie poprawności wymiarów
         if(!check::czyRamkaSieMiesci(x*dane::MNOZNIK, y, szer, wys))
@@ -13,15 +13,12 @@ namespace draw
         }
 
         dane::Wymiary wymiary = {};
-        wymiary.x = x;
-        wymiary.y = y;
-        wymiary.xkoniec = x + szer - 1;
-        wymiary.ykoniec = y + wys - 1;
-
-        if(!czyRamka)
-        {
-            util::rysujRamke(&wymiary, znak);
-        }
+            wymiary.x = x;
+            wymiary.y = y;
+            wymiary.xkoniec = x + szer - 1;
+            wymiary.ykoniec = y + wys - 1;
+        
+        util::rysujRamke(&wymiary, znak);
 
         return 0;
     }
