@@ -33,5 +33,5 @@ namespace draw
         DRAWAPI bool czyRamkaSieMiesci(int x, int y, int szer, int wys);
     }
 
-    DRAWAPI unsigned long rysujRamke(int x, int y, int szer, int wys, bool czyRamka, unsigned char znak);
+    DRAWAPI unsigned long rysujRamke(int x, int y, int szer, int wys, unsigned char znak);
 }
